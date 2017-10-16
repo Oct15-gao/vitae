@@ -16,4 +16,7 @@ $(document).ready(function() {
     $('.remove').click(function(event) {
         $('.registerPage').hide()
     });
+    $('.close').click(function(event) {
+        $('#topAdv').fadeOut(500)
+    });
 });
