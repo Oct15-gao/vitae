@@ -1,5 +1,6 @@
 #page{
-    width: 100%
+    width: 100%;
+    position: absolute;
 }
 /*背景大图*/
 header{
@@ -25,7 +26,7 @@ header{
     width: 100%;
     height: 34px;
     padding: 10px 0;
-    z-index: 1000;
+    z-index: 100;
     position: fixed;
 }
 /*LOGO*/
@@ -72,7 +73,7 @@ header{
     vertical-align: middle;
 }
 /*小点点喽*/
-.little{
+.nav .little{
     width: 24px;
     height: 28px;
     background-image: url('../images/icon/menu_sprite.svg');
@@ -89,118 +90,44 @@ header{
     border-right: 1px solid rgba(255,255,255,.85);
 }
 /*用户注册登录*/
-#userLogin{
+.nav #userLogin{
     float: right;
     text-align: center;
     color: #fff;
     margin-right: 10px;
 }
-#userLogin *{
+.nav #userLogin *{
     width: 52px;
     height: 34px;
     display: inline-block;
     border-radius: 3px;
     text-decoration: none;
 }
-#userLogin li:first-child{
+.nav #userLogin li:first-child{
     margin-right: 10px;
 }
 /*注册*/
-#userLogin .regi{
+.nav #userLogin .regi{
     border: 1px solid rgb(203, 0, 0,0);
     background:rgba(203, 0, 0, 0.6);
     line-height: 32px;
     margin-right: 50px;
 }
 /*登录*/
-#userLogin .login{
+.nav #userLogin .login{
     line-height: 32px;
     border: 1px solid #fff;
 }
-#userLogin .regi:hover{
+.nav#userLogin .regi:hover{
     background: rgba(255, 0, 0, 0.8);
 }
-#userLogin .login:hover{
+.nav #userLogin .login:hover{
     background: #fff;
     color: #000;
 }
 
 
-/*固定页头样式*/
-.bgWhite{
-    background-color: #fff;
-    color: #000;
-}
-.bgWhite .nav a{
-    color: #000 !important;
-}
-.bgWhite a.logo{
-    background-image: url('../images/logo/logo.svg') !important;
-}
-.bgWhite ul .rights{
-    border-right: 1px solid rgba(0,0,0,.5) !important;
-}
-.bgWhite #userLogin .regi{
-    color: #fff !important;
-}
-.bgWhite ul li.navItem a:hover,
-.bgWhite ul li.navItem a.active
-{
-    text-decoration: none;
-    color: rgb(201, 0, 0) !important;
-}
-.bgWhite #userLogin  .login{
-    background: #ddd !important;
-    border: 1px solid #eee;
-}
-.bgWhiteSearch{
-display: none;
-}
-.fixedSearch{
-    position: relative;
-    width: 500px;
-    height: 36px;
-    margin:  0 auto;
-    margin-left: 15px;
-}
-/*搜索框*/
-.fixedSearch .bannerSearch{
-    position: absolute;
-    display: block;
-    font-size: 14px;
-    width: 500px;
-    height: 36px;
-    border-radius: 3px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    color: #000;
-    padding: 0 5px;
-    margin:  0 auto;
-}
-/*搜索图标*/
-.fixedSearch .searchIcon{
-    display: block;
-    border: none;
-    width: 36px;
-    height: 36px;
-    position: absolute;
-    right: 0;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: url('../images/icon/menu_sprite.svg');
-    background-position: 5px -93px;
-    background-repeat: no-repeat;
-}
-/*热点搜索*/
-.fixedSearch .bannerHot{
-    text-align: center;
-    margin-top: 10px;
-    color: #ddd;
-}
-.fixedSearch .bannerHot a{
-    color: #fff;
-    padding-right: 5px;
-}
+
 /*-----------------------------------*/
 /*横幅*/
 #banner{
@@ -316,7 +243,7 @@ section{
     left: 50%;
     margin-left: -90px;
     text-align: center;
-    z-index: 999;
+    z-index: 50;
 }
 .contentTitle .hr{
     display: inline-block;
@@ -427,7 +354,7 @@ section{
     position: absolute;
     left: 50%;
     margin-left: -250px;
-    z-index: 999;
+    z-index: 50;
     text-align: center;
 }
 .more .hr{
