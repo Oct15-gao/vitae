@@ -1,0 +1,65 @@
+body,html{
+    height: 100%;
+}
+section{
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    font-size: 0;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+section .backgroundImage *{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+.Img1{
+    background-image: url('../images/banner/1.jpg');
+}
+.Img2{
+    background-image: url('../images/banner/2.jpg');
+}
+.Img3{
+    background-image: url('../images/banner/3.jpg');
+}
+.Img4{
+    background-image: url('../images/banner/4.jpg');
+}
+.Img5{
+    background-image: url('../images/banner/5.jpg');
+}
+.Img6{
+    background-image: url('../images/banner/6.jpg');
+}
+section .btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+section .btn >*{
+    position: absolute;
+    opacity: 0.5;
+    top: 50%;
+    margin-top: 40px;
+}
+section .btn >*:hover{
+    opacity: 1;
+}
+.left_btn{
+    left: 40px;
+}
+.right_btn{
+    right: 40px;
+}
+.num{
+    position: fixed;
+    z-index: 10000;
+
+}
