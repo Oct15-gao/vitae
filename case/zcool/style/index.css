@@ -163,6 +163,21 @@ header{
     cursor: pointer;
     width: 60px;
     height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%
+}
+.search{
+    background-image: url('../images/icon/nav-search.png');
+}
+.search:hover{
+    background-image: url('../images/icon/nav-search-white.png');
+}
+.upload{
+    background-image: url('../images/icon/nav-upload.png');
+}
+.upload:hover{
+    background-image: url('../images/icon/nav-upload-white.png');
 }
 .headerIcon span:hover{
     background-color: #282828;
