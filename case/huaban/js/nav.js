@@ -1,14 +1,19 @@
 $(document).ready(function() {
     $(window).scroll(function(event) {
     var hei = $(window).scrollTop();
-    if (hei >= 130) {
-        $('.fixedNav').addClass('bgWhite')
-        $('.fixedNav .bgWhiteSearch').show()
+    if (hei >= 250) {
+        $('.bgWhiteNav').fadeIn()
+        $('.fixedNav').fadeOut();
     }else {
-        $('.fixedNav').removeClass('bgWhite')
-        $('.fixedNav .bgWhiteSearch').hide()
+        $('.fixedNav').fadeIn();
+        $('.bgWhiteNav').fadeOut()
     }
-
     });
-
+    $('.registerPage').hide()
+    $('.regi').click(function(event) {
+        $('.registerPage').show()
+    });
+    $('.remove').click(function(event) {
+        $('.registerPage').hide()
+    });
 });
