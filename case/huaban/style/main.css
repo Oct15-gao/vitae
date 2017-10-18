@@ -1,9 +1,8 @@
-body,html{
-    width: 100%;
-}
+
 body{
     font-size: 14px;
     font-family: "Microsoft YaHei","HanHei SC","Helvetica Neue";
+    width: 100%;
 }
 a{
     text-decoration: none;

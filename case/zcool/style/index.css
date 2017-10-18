@@ -92,6 +92,7 @@ header{
 .find .findList{
     border-bottom: 1px solid #eaeaea;
     overflow: hidden;
+    clear: both;
     padding: 10px 0 25px 13px;
 }
 .find .findList span{
@@ -217,6 +218,7 @@ header{
     background-color: #eee;
     height: 300px;
     overflow: hidden;
+    clear: both;
     z-index: 0;
 }
 .top .banner ul{
@@ -227,6 +229,7 @@ header{
     float: left;
     width: 1130px;
     overflow: hidden;
+    clear: both;
 }
 .top .banner img{
     height: 300px;
@@ -261,6 +264,7 @@ header{
     margin-top: 20px;
     width: 1150px;
     overflow: hidden;
+    clear: both;
 }
 .topAdv .item{
     float: left;
@@ -269,6 +273,7 @@ header{
     border-radius: 5px;
     height: 168px;
     overflow: hidden;
+    clear: both;
 }
 .topAdv .item img{
     width: 210px;
@@ -280,6 +285,7 @@ header{
     border-top: 1px solid rgb(238, 238, 238);
     background: rgb(244, 244, 244);
     overflow: hidden;
+    clear: both;
 }
 .contentList{
     width: 1130px;
@@ -289,6 +295,7 @@ header{
 .conLis{
     width: 1150px;
     overflow: hidden;
+    clear: both;
 }
 .conLis .contentItem{
     float: left;
@@ -296,12 +303,14 @@ header{
     margin: 0 20px 20px 0;
     border-radius: 5px;
     overflow: hidden;
+    clear: both;
     background-color: #fff;
 }
 .conLis .contentItem .itemImg{
     height: 158px;
     width: 210px;
     overflow: hidden;
+    clear: both;
 }
 .contentItem .itemAside{
     width: 178px;
@@ -311,6 +320,7 @@ header{
 .contentItem .itemAside .conHead{
     width: 100%;
     overflow: hidden;
+    clear: both;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -346,6 +356,7 @@ header{
     height: 24px;
     border-radius: 50%;
     overflow: hidden;
+    clear: both;
     vertical-align: middle;
     float: left;
     margin-top: 12px;
@@ -404,6 +415,7 @@ header{
     margin: 0 auto;
     border-radius: 5px;
     overflow: hidden;
+    clear: both;
     margin-bottom: 40px;
 }
 footer{
