@@ -142,3 +142,6 @@ i.ps{
     text-decoration: underline;
     color: rgb(0, 134, 163)
 }
+#experience p{
+    display: inline-block;
+}
