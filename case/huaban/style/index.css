@@ -259,7 +259,6 @@ section{
     font-size: 0;
     width: 1260px;
     overflow: hidden;
-    clear: both;
 }
 .categoryImg .cateimgItem{
     display: inline-block;
@@ -267,7 +266,6 @@ section{
     margin-right: 7px;
     border-radius: 5px;
     overflow: hidden;
-    clear: both;
 }
 .categoryImg .cateimgItem img{
     width: 244px;
@@ -282,13 +280,11 @@ section{
     margin: 0 auto;
     margin-bottom: 8px;
     overflow: hidden;
-    clear: both;
 }
 .content .conbox{
     width:1260px;
     font-size: 0;
     overflow: hidden;
-    clear: both;
 
 }
 .list{
@@ -297,7 +293,6 @@ section{
     height: 305px;
     margin-right: 8px;
     overflow: hidden;
-    clear: both;
 }
 /*卡片文字内容*/
 .list .one{
@@ -385,7 +380,6 @@ section{
 .urlhuaban{
     width: 1248px;
     overflow: hidden;
-    clear: both;
     margin: 0 auto;
 }
 .urltitle{
@@ -426,7 +420,6 @@ footer{
     padding: 0 10px;
     margin: 0 auto;
     overflow: hidden;
-    clear: both;
 }
 .footerBox{
     width: 180px;
