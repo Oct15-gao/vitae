@@ -1,0 +1,120 @@
+body,html{
+    height: 100%;
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+body{
+    font-family: "Hiragino Sans GB","Microsoft YaHei","Helvetica Neue", Helvetica,  Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #383838;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+}
+h2{
+    letter-spacing: 2px;
+    margin: 14px 0;
+}
+h3{
+    margin-top: 10px;
+}
+h4{
+    margin-top: 6px;
+}
+p{
+    margin-top: 6px;
+    color: #555;
+}
+.contents h2{
+    color: #c60000;
+}
+.content{
+    padding-top: 10%;
+    padding-bottom: 5%;
+    border-bottom: 3px dotted #eee;
+    position: relative;
+}
+.leftSec h3{
+    color: #ddd;
+}
+.leftSec h4{
+    color: #aaa;
+}
+.leftSec a:hover{
+    color: #fff;
+}
+.study-name{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.study-name .box{
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.study-name .box h4{
+    position: absolute;
+    line-height: 20px;
+    margin: 0;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 12px;
+}
+.study-name .box i{
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    background-color: rgba(80 , 80 , 80 , .2);
+}
+.html{
+    width: 60%;
+}
+.css{
+    width: 50%;
+}
+.js{
+    width: 40%;
+}
+.jq{
+    width: 60%;
+}
+.ps{
+    width: 80%;
+}
+.time{
+    display: inline-block;
+    width: 120px;
+}
+.contactTit{
+    display: inline-block;
+    width: 60px;
+}
+.content a{
+    color: #004e7a;
+}
+.content a:hover{
+    color: #a20000;
+}
+.workA{
+    margin: 20px 0 10px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 20px 0;
+    clear: both;
+}

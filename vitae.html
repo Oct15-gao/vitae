@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>vitae</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 主要共用样式 -->
+        <link rel="stylesheet" href="style/stylesheets/main.css">
+        <!-- 客户端样式 -->
+        <link media="(min-width:780px)" rel="stylesheet" href="style/pc.css">
+        <!-- 手机端样式 -->
+        <link media="(max-width:780px)" rel="stylesheet" href="style/mobile.css">
+        <script src='js/jquery.min.js'></script>
+        <script src='js/vitae.js'></script>
+    </head>
+    <body>
+
+<!-- |-header  头部
+|-|-portrait  头像
+|-|-|-portrait-text  内容
+| |-menu  菜单栏
+|
+|         -->
+
+
+        <div id="page">
+            <!-- 头部头像以及导航 -->
+            <header>
+                <div class="portrait">
+                    <div class="portrait-text">
+                        <div class="name">高辉超</div>
+                        <p class="intention">求职意向：网页设计/前端工程</p>
+                    </div>
+                </div>
+                <!-- 菜单栏 -->
+                <ul class="menu">
+                    <li class="active">
+                        <div class="colorbox">
+                            <div class="arrow"></div>
+                        </div>
+                        <a class="about" href="javascript:">关于</a>
+                    </li>
+                    <li>
+                        <div class="colorbox">
+                            <div class="arrow"></div>
+                        </div>
+                        <a class="portfolio" href="javascript:">作品</a></li>
+                    <li>
+                        <div class="colorbox">
+                            <div class="arrow"></div>
+                        </div>
+                        <a class="speak" href="javascript:">聊聊</a></li>
+                </ul>
+            </header>
+            <!-- 主页 -->
+            <section id="index">
+                <!-- 个人介绍 -->
+                <div class="item me">
+                    <div class="title">/ 关于我</div>
+                    <p>· 两年设计经验,一年全职前端开发经验
+                        <br>
+                    · 熟悉设计,并拥有高效的自学能力,具备独立分析解决问题能力
+                        <br>
+                    · 强烈的自我驱动力
+                        <br>
+                    · 使用Python开发过个人博客
+                    </p>
+
+                    <p></p>
+                    <ul class="info">
+                        <li><span>姓名:</span>高辉超</li>
+                        <li><span>年龄:</span>23岁</li>
+                        <li><span>籍贯:</span>江苏宿迁</li>
+                    </ul>
+                    <ul class="info">
+                        <li><span>邮箱:</span>929849101@qq.com</li>
+                        <li><span>电话:</span>1392 1180 571</li>
+                        <li><span>学历:</span>大专</li>
+                    </ul>
+                </div>
+                <div class="item skills">
+                    <div class="title">/ 技能</div>
+                    <ul class="skill">
+                        <li>Photoshop:
+                            <span class="r1"></span>
+                        </li>
+                        <li>CorelDRAW:
+                            <span class="r2"></span>
+                        </li>
+                        <li>HTML/CSS:
+                            <span class="r2"></span>
+                        </li>
+                        <li>Javascript:
+                            <span class="r3"></span>
+                        </li>
+                    </ul>
+                    <ul class="skill">
+
+
+                        <li>jQuery:
+                            <span class="r2"></span>
+                        </li>
+                        <li>Sass:
+                            <span class="r4"></span>
+                        </li>
+                        <li>Bootstrap:
+                            <span class="r4"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item experience">
+                    <div class="title">/ 经历</div>
+                    <div class="experience-item">
+                        <h4>无锡市瑞得广告有限公司 – 网页设计/前端 </h4>
+                        <h6>2016.2-2017</h6>
+                        <p>任职期间主要负责网页页面设计以及前端代码的编写，画册、海报、宣传单页、LOGO的设计</p>
+                        <br>
+                        <h4>无锡市星音悦餐饮娱乐有限公司 - 平面设计 </h4>
+                        <h6>2015.12-2016.12</h6>
+                        <p>活动文宣的设计与安装</p>
+                        <br>
+                        <h4>无锡市初吻甜品 - 平面设计 </h4>
+                        <h6>2014.6-2015.3</h6>
+                        <p>负责公司整体物料布置与装修，以及活动文宣画面的设计与跟进</p>
+                        <br>
+                        <h4>无锡市职业技术学院 - 广告设计与制作 </h4>
+                        <h6>2011.9-2014.6</h6>
+                        <p>教育经历</p>
+                    </div>
+                </div>
+                <p class="footer">感谢您的阅读！</p>
+            </section>
+            <section id="works">
+                    <!-- ---------------------------------前端作品 -->
+                <div class="item">
+                    <div class="title">/ 前端作品</div>
+                    <p> 可以点进去 </p>
+                    <ul class="work">
+                        <li>
+                            <div class="img">
+                                <a target="_blank" href="case/travel/home.html"><img src="images/works/web1.jpg" alt=""></a>
+
+                            </div>
+                            <h4>旅游网站首页</h4>
+                            <p>主要使用JQ交互，拥有登录以及注册页面，并用sass进行对css代码的归纳编写。</p>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <a target="_blank" href="case/huaban/index.html"><img src="images/works/web0.jpg" alt=""></a>
+
+                            </div>
+                            <h4>花瓣网练习</h4>
+                            <p>对花瓣网首页的一次模仿</p>
+                        </li>
+                    </ul>
+                    <ul class="work">
+                        <li>
+                            <div class="img ">
+                                <a target="_blank" href="case/mo7/index.html"><img src="images/works/mo71.png" alt=""></a>
+
+                            </div>
+                            <h4>个人网站网站 - 4页面</h4>
+                            <p>为朋友设计的一个个人网站。
+                            <br>
+                            作品、介绍、联系方式、主页四个页面，作品图片可点击放大，主页轮播图对屏幕自适应</p>
+                        </li>
+                    </ul>
+                </div>
+                    <!-- ---------------------------------网页作品 -->
+                <div class="item length">
+                    <div class="title">/ 网页作品</div>
+                    <ul class="work">
+                        <li>
+                            <div class="img">
+                                <img src="images/works/web3.jpg" alt="">
+                            </div>
+                            <h4>金易金融公司</h4>
+                            <p>页面设计+代码编写</p>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="images/works/web4.jpg" alt="">
+                            </div>
+                            <h4>金融P2P公司</h4>
+                            <p>页面设计+代码编写</p>
+                        </li>
+                    </ul>
+                    <ul class="work">
+                        <li>
+                            <div class="img">
+                                <img src="images/works/web2.jpg" alt="">
+                            </div>
+                            <h4>营销公司网站</h4>
+                            <p>页面设计+代码编写</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- ---------------------------------平面作品 -->
+                <div class="item length">
+                    <div class="title">/ 平面作品</div>
+                    <ul class="work">
+                        <li>
+                            <div class="img">
+                                <img src="images/works/graphic2.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="images/works/graphic1.jpg" alt="">
+                            </div>
+                            <h4>牛排杯菜单</h4>
+                            <p>平面设计</p>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="images/works/graphic6.jpg" alt="">
+                            </div>
+                            <h4>泰州国企文化墙</h4>
+                            <p>平面设计</p>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="images/works/graphic8.jpg" alt="">
+                            </div>
+                            <h4>U滋客画册设计</h4>
+                            <p>只留下了一个页面，平面设计</p>
+                        </li>
+                    </ul>
+                    <ul class="work">
+                        <li>
+                            <div class="img">
+                                <img src="images/works/graphic3.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="images/works/graphic4.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="images/works/graphic5.jpg" alt="">
+                            </div>
+                            <h4>牛排杯产品海报</h4>
+                            <p>平面设计</p>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="images/works/graphic10.jpg" alt="">
+                            </div>
+                            <h4>无锡职院会议展架</h4>
+                            <p>平面设计</p>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer">感谢您的阅读！</p>
+            </section>
+            <section id="speak">
+                <p class="speak-text">我是在去年之前一直做设计的工作，后来在广告公司的时候，在自己的兴趣和公司的培养之下开始学习前端。
+                </p>
+                <p class="speak-text">
+                目前计划是学习Vue和node，计划年后学习一下C4D
+                </p>
+            </section>
+        </div>
+
+
+    </body>
+
+</html>

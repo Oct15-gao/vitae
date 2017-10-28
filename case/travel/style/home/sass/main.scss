@@ -1,0 +1,191 @@
+@import "other";
+@import "compass/reset";
+@font-face {
+    font-family: 'HYQiHei-40s';
+    src: url('../../../images/font/HYQiHei-40S.otf');
+}
+body{
+    font-family: 'HYQiHei-40s',"Microsoft YaHei","HanHei SC","Helvetica Neue" ,'weiruanyahei';
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body,html{
+    width: 100%;
+}
+
+.nav-box{
+    width: 100%;
+    position: absolute;
+    height: 150px;
+    z-index: 150;
+    nav{
+        width: 1170px;
+        height: 150px;
+        margin: 0 auto;
+        line-height: 150px;
+        color: #555;
+        .logo-top{
+            height: 50px;
+            margin-top: 50px;
+        }
+        .menu{
+            margin-left:130px;
+            height: 50px;
+            li{
+                display: inline-block;
+                a{
+                    font-weight: bold;
+                    margin: 0 20px;
+                    &:hover{
+                        text-decoration: underline;
+                        color: #be4544;
+                    }
+                }
+            }
+        }
+
+        .user{
+            height: 100%;
+            margin-right: 50px;
+            a{
+                display: inline-block;
+                margin-right: 20px;
+                height: 30px;
+                &:hover{
+                    text-decoration: underline;
+                    color: #be4544;
+                }
+            }
+            .search{
+                position: relative;
+                height: 30px;
+                width: 30px;
+                margin: 60px;
+                right: 0;
+                .search-icon{
+                    margin-top: 6px;
+                    position: absolute;
+                    display: inline-block;
+                    height: 18px;
+                    width: 18px;
+                    @include  bgposi(0px,0px);
+                    background-image: url("../../../images/icon/search.png");
+                    z-index: 200;
+                }
+
+                .search-input{
+                    position: absolute;
+                    display: none;
+                    left: -100px;
+                    height: 30px;
+                    width: 220px;
+                    padding: 0 10px;
+                    color: #9c9b9b;
+                    background-color: #e6e6e6;
+                    border: 1px solid #fff;
+                    border-radius: 15px;
+                    &:focus{
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+.signPage{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index:300;
+
+    .signBox{
+        text-align: center;
+        min-height: 600px;
+        width: 370px;
+        position: absolute;
+        left: 50%;
+        padding: 0 30px;
+        margin-top: 100px;
+        margin-left: -215px;
+        background-color: #fff;
+        .close{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            height: 20px;
+            width: 20px;
+            background-image: url('../../../images/icon/close.png');
+            @include  bgcenter;
+            cursor: pointer;
+        }
+        .sign-title{
+            margin-top: 60px;
+            font-size: 30px;
+            .boldtit{
+                font-weight: bold;
+            }
+            p{
+                font-size: 14px;
+                margin-top: 20px;
+                color: #999;
+            }
+        }
+    }
+    .form{
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 40px;
+        width: auto;
+        margin:40px 0 60px;
+        text-align: left;
+        p{
+            margin: 30px 0 10px;
+        }
+        .input{
+            width: 334px;
+            height: 40px;
+            padding: 0 16px;
+            border-radius: 5px;
+            border: 2px solid #eee;
+            &:focus{
+                border: 2px solid #aaa;
+            }
+        }
+        .abouttext{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            color: #d3d3d3;
+            .checkbox,span{
+                float: right;
+            }
+            .checkbox{
+                width: 20px;
+                height: 20px;
+                margin-top: 5px;
+            }
+        }
+        .signbtn{
+            display: block;
+            width: 130px;
+            height: 45px;
+            margin: 30px auto 30px;;
+            border-radius: 5px;
+            background-color: #42394a;
+            border: none;
+            color: #fff;
+            &:hover{
+                background-color: #29296a;
+                cursor: pointer;
+            }
+        }
+    }
+}

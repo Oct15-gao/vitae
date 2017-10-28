@@ -1,0 +1,16 @@
+.floatL{
+    float: left;
+}
+.floatR{
+    float: right;
+}
+@mixin bgcenter {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin bgposi($XX,$YY) {
+    background-position: $XX $YY;
+    background-repeat: no-repeat;
+}

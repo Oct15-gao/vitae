@@ -1,0 +1,297 @@
+/* line 1, ../sass/_other.scss */
+.floatL {
+  float: left;
+}
+
+/* line 4, ../sass/_other.scss */
+.floatR {
+  float: right;
+}
+
+/* line 5, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'HYQiHei-40s';
+  src: url("../../../images/font/HYQiHei-40S.otf");
+}
+/* line 7, ../sass/main.scss */
+body {
+  font-family: 'HYQiHei-40s',"Microsoft YaHei","HanHei SC","Helvetica Neue" ,'weiruanyahei';
+  font-size: 14px;
+}
+
+/* line 11, ../sass/main.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 15, ../sass/main.scss */
+body, html {
+  width: 100%;
+}
+
+/* line 19, ../sass/main.scss */
+.nav-box {
+  width: 100%;
+  position: absolute;
+  height: 150px;
+  z-index: 150;
+}
+/* line 24, ../sass/main.scss */
+.nav-box nav {
+  width: 1170px;
+  height: 150px;
+  margin: 0 auto;
+  line-height: 150px;
+  color: #555;
+}
+/* line 30, ../sass/main.scss */
+.nav-box nav .logo-top {
+  height: 50px;
+  margin-top: 50px;
+}
+/* line 34, ../sass/main.scss */
+.nav-box nav .menu {
+  margin-left: 130px;
+  height: 50px;
+}
+/* line 37, ../sass/main.scss */
+.nav-box nav .menu li {
+  display: inline-block;
+}
+/* line 39, ../sass/main.scss */
+.nav-box nav .menu li a {
+  font-weight: bold;
+  margin: 0 20px;
+}
+/* line 42, ../sass/main.scss */
+.nav-box nav .menu li a:hover {
+  text-decoration: underline;
+  color: #be4544;
+}
+/* line 50, ../sass/main.scss */
+.nav-box nav .user {
+  height: 100%;
+  margin-right: 50px;
+}
+/* line 53, ../sass/main.scss */
+.nav-box nav .user a {
+  display: inline-block;
+  margin-right: 20px;
+  height: 30px;
+}
+/* line 57, ../sass/main.scss */
+.nav-box nav .user a:hover {
+  text-decoration: underline;
+  color: #be4544;
+}
+/* line 62, ../sass/main.scss */
+.nav-box nav .user .search {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: 60px;
+  right: 0;
+}
+/* line 68, ../sass/main.scss */
+.nav-box nav .user .search .search-icon {
+  margin-top: 6px;
+  position: absolute;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-image: url("../../../images/icon/search.png");
+  z-index: 200;
+}
+/* line 79, ../sass/main.scss */
+.nav-box nav .user .search .search-input {
+  position: absolute;
+  display: none;
+  left: -100px;
+  height: 30px;
+  width: 220px;
+  padding: 0 10px;
+  color: #9c9b9b;
+  background-color: #e6e6e6;
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+/* line 90, ../sass/main.scss */
+.nav-box nav .user .search .search-input:focus {
+  background-color: #fff;
+}
+
+/* line 100, ../sass/main.scss */
+.signPage {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+}
+/* line 108, ../sass/main.scss */
+.signPage .signBox {
+  text-align: center;
+  min-height: 600px;
+  width: 370px;
+  position: absolute;
+  left: 50%;
+  padding: 0 30px;
+  margin-top: 100px;
+  margin-left: -215px;
+  background-color: #fff;
+}
+/* line 118, ../sass/main.scss */
+.signPage .signBox .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 20px;
+  width: 20px;
+  background-image: url("../../../images/icon/close.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+/* line 128, ../sass/main.scss */
+.signPage .signBox .sign-title {
+  margin-top: 60px;
+  font-size: 30px;
+}
+/* line 131, ../sass/main.scss */
+.signPage .signBox .sign-title .boldtit {
+  font-weight: bold;
+}
+/* line 134, ../sass/main.scss */
+.signPage .signBox .sign-title p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #999;
+}
+/* line 141, ../sass/main.scss */
+.signPage .form {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 40px;
+  width: auto;
+  margin: 40px 0 60px;
+  text-align: left;
+}
+/* line 148, ../sass/main.scss */
+.signPage .form p {
+  margin: 30px 0 10px;
+}
+/* line 151, ../sass/main.scss */
+.signPage .form .input {
+  width: 334px;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+}
+/* line 157, ../sass/main.scss */
+.signPage .form .input:focus {
+  border: 2px solid #aaa;
+}
+/* line 161, ../sass/main.scss */
+.signPage .form .abouttext {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #d3d3d3;
+}
+/* line 167, ../sass/main.scss */
+.signPage .form .abouttext .checkbox, .signPage .form .abouttext span {
+  float: right;
+}
+/* line 170, ../sass/main.scss */
+.signPage .form .abouttext .checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+/* line 176, ../sass/main.scss */
+.signPage .form .signbtn {
+  display: block;
+  width: 130px;
+  height: 45px;
+  margin: 30px auto 30px;
+  border-radius: 5px;
+  background-color: #42394a;
+  border: none;
+  color: #fff;
+}
+/* line 185, ../sass/main.scss */
+.signPage .form .signbtn:hover {
+  background-color: #29296a;
+  cursor: pointer;
+}
