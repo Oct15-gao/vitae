@@ -3,26 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>vitae</title>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- 主要共用样式 -->
-        <link rel="stylesheet" href="style/stylesheets/main.css">
         <!-- 客户端样式 -->
-        <link media="(min-width:780px)" rel="stylesheet" href="style/pc.css">
+        <link media="(min-width:780px)" rel="stylesheet" href="style/stylesheets/main.css">
         <!-- 手机端样式 -->
-        <link media="(max-width:780px)" rel="stylesheet" href="style/mobile.css">
+        <link media="(max-width:780px)" rel="stylesheet" href="style/stylesheets/mobie.css">
         <script src='js/jquery.min.js'></script>
         <script src='js/vitae.js'></script>
     </head>
     <body>
-
-<!-- |-header  头部
-|-|-portrait  头像
-|-|-|-portrait-text  内容
-| |-menu  菜单栏
-|
-|         -->
-
 
         <div id="page">
             <!-- 头部头像以及导航 -->
@@ -58,13 +48,15 @@
                 <!-- 个人介绍 -->
                 <div class="item me">
                     <div class="title">/ 关于我</div>
-                    <p>· 两年设计经验,一年全职前端开发经验
+                    <p>· 两年设计经验,大半年全职前端开发经验
                         <br>
-                    · 熟悉设计,并拥有高效的自学能力,具备独立分析解决问题能力
+                    · 熟练使用Photoshop、CDR等设计软件
                         <br>
-                    · 强烈的自我驱动力
+                    · 熟练掌握js代码及css代码和网页框架
                         <br>
-                    · 使用Python开发过个人博客
+                    · 熟悉设计,并拥有高效的自学能力,具备独立分析解决问题能力，强烈的自我驱动力
+                        <br>
+                    · 使用Python的Django开发过个人博客
                     </p>
 
                     <p></p>
@@ -79,6 +71,7 @@
                         <li><span>学历:</span>大专</li>
                     </ul>
                 </div>
+                <!-- 个人技能 -->
                 <div class="item skills">
                     <div class="title">/ 技能</div>
                     <ul class="skill">
@@ -109,12 +102,16 @@
                         </li>
                     </ul>
                 </div>
+                <!-- 个人经历 -->
                 <div class="item experience">
                     <div class="title">/ 经历</div>
                     <div class="experience-item">
                         <h4>无锡市瑞得广告有限公司 – 网页设计/前端 </h4>
-                        <h6>2016.2-2017</h6>
-                        <p>任职期间主要负责网页页面设计以及前端代码的编写，画册、海报、宣传单页、LOGO的设计</p>
+                        <h6>2017.2-2017</h6>
+                        <p>· 负责PC端网页视觉设计，创意和制作的工作。</p>
+                        <p>· 参与设计的开发过程，确保设计与开发实现效果的一致性。</p>
+                        <p>· 根据客户的需求充分发挥创意，设计出让用户满意的界面。</p>
+
                         <br>
                         <h4>无锡市星音悦餐饮娱乐有限公司 - 平面设计 </h4>
                         <h6>2015.12-2016.12</h6>
@@ -131,28 +128,30 @@
                 </div>
                 <p class="footer">感谢您的阅读！</p>
             </section>
+            <!-- 作品页 -->
             <section id="works">
                     <!-- ---------------------------------前端作品 -->
                 <div class="item">
                     <div class="title">/ 前端作品</div>
-                    <p> 可以点进去 </p>
+                    <p> 可以点击 </p>
                     <ul class="work">
+                        <li>
+                            <div class="img">
+                                <a target="_blank" href="case/cheng/vitae.html"><img src="images/works/web0.jpg" alt=""></a>
+
+                            </div>
+                            <h4>摄影简历网站 - 响应式</h4>
+                            <p>一个响应式简历，支持手机与PC两个端口，摄影朋友的网站。</p>
+                        </li>
                         <li>
                             <div class="img">
                                 <a target="_blank" href="case/travel/home.html"><img src="images/works/web1.jpg" alt=""></a>
 
                             </div>
-                            <h4>旅游网站首页</h4>
+                            <h4>旅游网站首页 - PC</h4>
                             <p>主要使用JQ交互，拥有登录以及注册页面，并用sass进行对css代码的归纳编写。</p>
                         </li>
-                        <li>
-                            <div class="img">
-                                <a target="_blank" href="case/huaban/index.html"><img src="images/works/web0.jpg" alt=""></a>
 
-                            </div>
-                            <h4>花瓣网练习</h4>
-                            <p>对花瓣网首页的一次模仿</p>
-                        </li>
                     </ul>
                     <ul class="work">
                         <li>
@@ -160,10 +159,10 @@
                                 <a target="_blank" href="case/mo7/index.html"><img src="images/works/mo71.png" alt=""></a>
 
                             </div>
-                            <h4>个人网站网站 - 4页面</h4>
+                            <h4>个人网站 - 4页面 - PC</h4>
                             <p>为朋友设计的一个个人网站。
                             <br>
-                            作品、介绍、联系方式、主页四个页面，作品图片可点击放大，主页轮播图对屏幕自适应</p>
+                            作品、介绍、联系方式、主页四个页面，作品图片可点击放大。</p>
                         </li>
                     </ul>
                 </div>
@@ -251,12 +250,33 @@
                 </div>
                 <p class="footer">感谢您的阅读！</p>
             </section>
+            <!-- 碎碎念 -->
             <section id="speak">
-                <p class="speak-text">我是在去年之前一直做设计的工作，后来在广告公司的时候，在自己的兴趣和公司的培养之下开始学习前端。
-                </p>
-                <p class="speak-text">
-                目前计划是学习Vue和node，计划年后学习一下C4D
-                </p>
+                <div class="item">
+                    <p  class="speak-text">
+                    我是在2016年底接触前端技术，之后一直在广告公司任职期间从事网页设计+前端代码编写的工作。
+                    <br>
+                    <br>
+                    刚进公司的那时候，交互，代码编写，我都有是积极的参与，因为是新人，所以好好把握住每个学习的机会，我的本职工作，网页设计这块，我都是认真负责完成。那时候虽然很忙，压力很大，但真的是学到了不少东西，前端技术也在不断的在完善，不断的在参与。
+                    <br>
+                    <br>
+                    在上一家公司中，我最大的收获不单单是能力方面，主要还有自学能力和同事的沟通能力，这都是我学到的，而且我认为很重要的。
+                    <br>
+                    <br>
+                    工作方面我一直从事于设计+前端的工作，掌握的前端技术有，js，div+css，Jquery，Sass，同时我也了解Python的Django构建网站这块。
+                    <br>
+                    <br>
+                    我的性格方面不算外向，也不算内向，跟朋友，同事相处，比较外向，在工作中，代码开发时，我是比较内向的，我喜欢全心全意的投入工作中。我也喜欢交朋友，偶尔跟朋友聚聚，聊聊。对于工作我总是抱着认真负责，有责任心，吃苦耐劳的态度工作。
+                    <br>
+                    <br>
+                    很喜欢看到自己设计的页面可以在自己的手里面一点一滴的创造出来。
+                    <br>
+                    <br>
+                    目前正在学习Vue和node。
+                    </p>
+                </div>
+
+                <p class="footer">感谢您的阅读！</p>
             </section>
         </div>
 

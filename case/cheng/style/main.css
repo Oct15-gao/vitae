@@ -78,21 +78,19 @@ p{
     height: 100%;
     background-color: rgba(80 , 80 , 80 , .2);
 }
-.html{
-    width: 60%;
-}
-.css{
-    width: 50%;
-}
-.js{
-    width: 40%;
-}
-.jq{
-    width: 60%;
-}
-.ps{
+.Photoshop{
     width: 80%;
 }
+.indesign{
+    width: 60%;
+}
+.Illustartor{
+    width: 70%;
+}
+.primere{
+    width: 60%;
+}
+
 .time{
     display: inline-block;
     width: 120px;

@@ -1,3 +1,267 @@
-body,html,header,.page,.section{
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset","define";
+@font-face {
+    font-family: 'HiraginoSansGBW3';
+    src: url('../font/HiraginoSansGBW3.otf');
+}
+body,html{
     width: 100%;
+}
+body{
+    font-family: 'HiraginoSansGBW3',"Microsoft YaHei","HanHei SC","Helvetica Neue" ;
+    font-size: 14px;
+    background-image: url('../../images/pattern.png');
+}
+#page{
+    width: 100%;
+    margin-top: 80px;
+    position: relative;
+}
+header,section{
+    width: 80%;
+    margin: 0 auto;
+}
+.portrait{
+    background: url('../../images/portrait.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 270px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.portrait-text{
+    color: #fff;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    background-color: $themeColor;
+    opacity: 0.95;
+    padding: 10px;
+    .name{
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        font-family: "Microsoft YaHei","HanHei SC","Helvetica Neue";
+    }
+    .intention{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+.menu{
+    width: 100%;
+    li{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: #e8e8e8;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        color: $fontColor;
+        margin: 5px 0;
+        a{
+            display: inline-block;
+            font-size: 18px;
+            width: 100%;
+            &.about{
+                background-image: url('../../images/about-ico.png');
+                background-position: 10px center;
+                background-repeat: no-repeat;
+            }
+            &.portfolio{
+                background-image: url('../../images/folio-ico.png');
+                background-position: 10px center;
+                background-repeat: no-repeat;
+            }
+            &.speak{
+                background-image: url('../../images/contact-ico.png');
+                background-position: 10px center;
+                background-repeat: no-repeat;
+            }
+        }
+        .colorbox{
+            position: absolute;
+            height: 100%;
+            width: 5px;
+            right: 0;
+            background-color: #aaa;
+            .arrow{
+                display: none;
+                width: 6px;
+                height: 6px;
+                margin-top:17px;
+                right: 2px;
+                position: absolute;
+                background-color: #aaa;
+                transform:rotate(45deg);
+                -ms-transform:rotate(45deg);
+                -moz-transform:rotate(45deg);
+                -webkit-transform:rotate(45deg);
+                -o-transform:rotate(45deg);
+            }
+        }
+    }
+}
+li.active{
+    color: $themeColor;
+    background-color: #fff;
+    .colorbox{
+        background-color: $themeColor;
+        .arrow{
+            display: block;
+            background-color: $themeColor;
+        }
+    }
+    a{
+        &.about{
+            background-image: url('../../images/about-ico-active.png');
+        }
+        &.portfolio{
+            background-image: url('../../images/folio-ico-active.png');
+        }
+        &.speak{
+            background-image: url('../../images/contact-ico-active.png');
+        }
+    }
+
+}
+
+section{
+    background-color: #fff;
+    border-right: 3px solid #eee;
+    border-top: 3px solid #eee;
+    padding: 25px 0 ;
+    border-radius: 5px;
+    .item{
+        padding-bottom: 10px;
+        margin: 0 25px 10px 25px;
+        border-bottom: 1px dotted #e3e2e2;
+        overflow: hidden;
+        clear: both;
+        .title{
+            font-weight: bold;
+            font-size: 18px;
+            color: $themeColor;
+            margin-bottom: 20px;
+        }
+        p{
+            line-height: 1.4;
+            font-size: 12px;
+            font-weight: lighter;
+            color: $fontColor;
+        }
+        .info{
+            width: 100%;
+            li{
+                color: #666666;
+                font-size: 12px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                margin-top: 9px;
+                padding: 6px 0 6px 20px;
+                border-left: 3px solid #cccccc;
+                background: #efefef;
+                span{
+                    display: inline-block;
+                    font-weight: bold;
+                    width: 50px;
+                }
+            }
+        }
+        .skill{
+            color: #666;
+            font-size: 12px;
+            padding-bottom: 3px;
+            width: 100%;
+            li{
+                line-height: 18px;
+                height: 25px;
+            }
+            span{
+                display: inline-block;
+                width: 113px;
+                height: 18px;
+                background-image: url('../../images/rating-sprite.png');
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                position: absolute;
+                left: 40%;
+                &.r1{
+                    background-position: 0 4px;
+                }
+                &.r2{
+                    background-position: 0 -16px;
+                }
+                &.r3{
+                    background-position: 0 -36px;
+                }
+                &.r4{
+                    background-position: 0 -56px;
+                }
+                &.r5{
+                    background-position: 0 -76px;
+                }
+            }
+
+        }
+        .work{
+            float: left;
+            width: 100%;
+            margin: 0 40px 10px 0;
+
+            li{
+                margin: 10px 0 50px;
+                padding-bottom: 8px;
+                border-bottom: 2px dotted $themeColor;
+            }
+            .img{
+                width: 100%;
+                border-top: 3px solid $themeColor;
+                border-radius: 5px;
+                overflow: hidden;
+                max-height: 150px;
+                margin-bottom: 8px;
+                margin-top: 15px;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        h4{
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        h6{
+            color: #555;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+    }
+}
+p.speak-text{
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: lighter;
+    color: $fontColor;
+    padding: 0 20px;
+    margin: 5px 0;
+
+}
+.footer{
+    text-align: center;
+    color: #999;
 }
