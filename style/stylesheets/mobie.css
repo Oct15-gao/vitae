@@ -92,7 +92,7 @@ body {
 /* line 19, ../sass/mobie.scss */
 #page {
   width: 100%;
-  margin-top: 80px;
+  padding-top: 80px;
   position: relative;
 }
 
