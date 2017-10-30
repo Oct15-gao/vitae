@@ -1,5 +1,5 @@
 setTimeout(function(){
-    $("#loading").fadeOut(5000)
+    $("#loading").slideUp(5000)
 },3000)
 $(document).ready(function() {
 
