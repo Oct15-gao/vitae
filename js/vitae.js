@@ -1,7 +1,8 @@
+setTimeout(function(){
+    $("#loading").fadeOut(5000)
+},3000)
 $(document).ready(function() {
-    setTimeout(function(){
-        $("#loading").fadeOut(3000)
-    },3000)
+
     $('#works').hide()
     $('#speak').hide()
     $('.menu li').click(function(event) {
