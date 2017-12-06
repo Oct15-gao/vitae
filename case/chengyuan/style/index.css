@@ -1,13 +1,12 @@
 /*横幅轮播图样式*/
 #banner{
-    width: 100%;
-    height: 0;
-    padding-bottom: 30%;
+    min-width: 1200px;
+    height: 600px;
+    margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
 #sections{
-    /*width: 300%;*/
     position: absolute;
     height: 100%;
 }
@@ -32,13 +31,14 @@
     display: inline-block;
     border-radius: 50%;
     background-color: #eee;
+    cursor: pointer;
 }
 #rounds .round.active{
     background-color: #FFFF00;
 }
 /*正文同意样式*/
 article{
-    width: 100%;
+    min-width: 1200px;;
 }
 article header{
     width: 1200px;

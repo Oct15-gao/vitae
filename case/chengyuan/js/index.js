@@ -10,7 +10,6 @@ $(document).ready(function() {
             num=0
         }
         $('.article-sections').stop().animate({left: -num*itemW}, 500)
-        console.log(num);
     });
     $('.arrow-right').click(function(event) {
         num--;
@@ -18,7 +17,6 @@ $(document).ready(function() {
             num=2;
         }
         $('.article-sections').stop().animate({left: -num*itemW}, 500)
-        console.log(num);
     });
 
 // 幻灯片轮播图
@@ -41,7 +39,16 @@ $(document).ready(function() {
         if (Bnum>=BLen-1) {
             Bnum = -1;
         }
-        console.log(Bnum);
     }),5000)
 
+    $('#rounds .round').mouseover(function(event) {
+        // num = $(this).index()
+        $(this).addClass('active').siblings().removeClass('active')
+        $('#sections').stop().animate({left: -bannerW*$(this).index()}, 500)
+        Bnum = $(this).index()
+        if (Bnum>=BLen-1) {
+            Bnum = -1;
+        }
+        console.log(-bannerW*$(this).index());
+    });
 });
