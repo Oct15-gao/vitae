@@ -1,0 +1,182 @@
+a:hover{
+    color: #FFBE00;
+}
+header{
+    width: 100%;
+
+    height: 120px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.head-title{
+    height: 70px;
+    line-height: 70px;
+    padding: 0 130px;
+}
+.head-logo{
+    height: 50px;
+    padding-top: 10px;
+}
+.head-logo img{
+    height: 100%;
+}
+.head-language{
+    font-weight: bold;
+}
+.head-language a.active{
+    color: #555;
+}
+nav{
+    padding: 0 130px;
+    height: 100%;
+}
+nav > ul{
+    clear: both;
+    width: 90%;
+    height: 50px;
+}
+nav > ul > li{
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    width: 13%;
+    text-align: center;
+    line-height: 50px;
+    color: #666;
+    position: relative;
+    font-size: 16px;
+}
+nav > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+}
+nav > ul > li:hover > a{
+    color: #FFBE00;
+}
+nav > ul > li > .down-menu{
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    top: 48px;
+    border-top: 3px solid #FFBE00;
+    overflow: hidden;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    display: none;
+}
+nav > ul > li:hover .down-menu{
+    display: block;
+}
+.down-menu li{
+    line-height: 30px;
+    font-size: 12px;
+}
+.down-menu li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.down-menu li a:hover{
+    background-color: #FFBE00;
+}
+.down-menu li:hover a{
+    color: #473900
+}
+/*搜索按钮*/
+.search img{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+.search img:hover{
+    opacity: 1;
+}
+/*搜索界面*/
+.search-page{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10000;
+}
+/*搜索盒子*/
+.search-box{
+    width: 600px;
+    height: 50px;
+    /*background-color: #fff;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -25px;
+}
+/*搜索框*/
+.search-box input{
+    border-radius: 25px 0 0 25px;
+    padding: 0 25px;
+    width: 500px;
+    border: 0;
+    height: 100%;
+    outline: 0;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.search-box input:focus{
+    background-color: rgba(255, 255, 255, 1);
+}
+/*搜索图标*/
+.search-icon{
+    width: 100px;
+    background-color: #FFBE00;
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+    opacity: 0.6;
+}
+.search-icon:hover{
+    opacity: 1;
+}
+.search-icon button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: 0;
+}
+.search-icon img{
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+}
+.off{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    opacity: 0.5;
+}
+.off:hover{
+    opacity: 1;
+}
+
+
+footer{
+    width: 100%;
+    padding: 30px 0 0;
+    border-top: 2px dotted   #eee;
+    text-align: center;
+}
+.wrapper{
+    background-color: #111;
+    height: 40px;
+    line-height: 40px;
+    color: #ccc;
+    font-size: 12px;
+}
