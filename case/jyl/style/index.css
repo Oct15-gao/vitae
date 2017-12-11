@@ -216,13 +216,16 @@ ul.envi-list li{
     cursor: pointer;
 }
 ul.envi-list li .black-bg{
-    display: none;
+    display: block;
     height: 100%;
     width: 100%;
-    background-color: rgba(255,255,255,0.5);
+    line-height: 140px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
 }
 ul.envi-list li.active .black-bg{
-    display: block;
+    display: none;
 }
 ul.envi-list li:last-child{
     margin-bottom: 0;

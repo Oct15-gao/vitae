@@ -293,16 +293,24 @@
         <div class="envi-content">
             <ul class="envi-list left">
                 <li class="active" style="background-image: url(images/index/envi/1.jpg);">
-                    <div class="black-bg"></div>
+                    <div class="black-bg">
+                        <h3>办公环境</h3>
+                        </div>
                 </li>
                 <li style="background-image: url(images/index/envi/2.jpg);">
-                    <div class="black-bg"></div>
+                    <div class="black-bg">
+                        <h3>印染车间</h3>
+                        </div>
                 </li>
                 <li style="background-image: url(images/index/envi/3.jpg);">
-                    <div class="black-bg"></div>
+                    <div class="black-bg">
+                        <h3>缝制车间</h3>
+                        </div>
                 </li>
                 <li style="background-image: url(images/index/envi/4.jpg);">
-                    <div class="black-bg"></div>
+                    <div class="black-bg">
+                        <h3>产品展厅</h3>
+                        </div>
                 </li>
             </ul>
             <ul class="envi-show right">
@@ -402,20 +410,26 @@
 
     <!-- 所有搜索交互 -->
     <script type="text/javascript">
+    $(document).ready(function() {
         $('.off').click(function(event) {
             $('.search-page').hide();
         });
         $('.search').click(function(event) {
             $('.search-page').fadeIn(500);
         });
+    });
+
     </script>
     <!-- index的交互 -->
+
+
     <script type="text/javascript">
-        $('.pro-show li').eq(0).show();
+    $(document).ready(function() {
+        $('.pro-show li').eq(0).show().siblings().hide();
         $('.pro-menu li').each(function(i) {
             $(this).mousemove(function(event) {
                 $(this).addClass('active').siblings().removeClass('active')
-                $('.pro-show li').eq(i).slideDown(500).siblings().hide()
+                $('.pro-show li').eq(i).stop().fadeIn(500).siblings().hide();
             });
         });
         $('.search').click(function(event) {
@@ -423,12 +437,14 @@
         });
 
 
-        $('.envi-show.right li').eq(0).show().siblings().hide();
+        $('.envi-show.right li').eq(0).hide().siblings().show();
         $('.envi-list.left li').each(function(i) {
             $(this).mousemove(function(event) {
                 $(this).addClass('active').siblings().removeClass('active')
-                $('.envi-show.right li').eq(i).fadeIn(500).siblings().hide()
+                $('.envi-show.right li').eq(i).stop().show().siblings().hide()
             });
         });
+    });
+
     </script>
 </html>
