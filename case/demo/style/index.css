@@ -267,6 +267,9 @@ ul.pro-show li:hover{
 .news-list{
     width: 65%;
 }
+.news-list a:hover h4{
+    color: red;
+}
 .news-item{
     margin-bottom: 15px;
     padding-bottom: 5px;
