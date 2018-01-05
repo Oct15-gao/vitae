@@ -57,7 +57,6 @@ html,body,.page{
     background-size: 100% auto;
     width: 12.5%;
     height: 100%;
-    background-color: red;
     display: table-cell;
     vertical-align: middle;
     position: relative;
@@ -96,7 +95,6 @@ html,body,.page{
 .page-show{
     width: 37.5%;
     height: 100%;
-    background-color: blue;
     display: table-cell;
     background-image: url(../images/main/tit-bg.png);
 }
