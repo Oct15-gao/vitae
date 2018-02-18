@@ -1,0 +1,99 @@
+body{
+    font-family: "Microsoft Yahei","微软雅黑","helvetica neue",arial,sans-serif;
+    font-size: 14px;
+    background-color: #1A1A1A;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    height: 162px;
+    width: 100%;
+}
+.logo-bg{
+    width: 420px;
+    height: 82px;
+    margin: 0 auto;
+    background-image: url(../images/logo-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo{
+    width: 223px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #1F1F21;
+}
+nav ul{
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+nav ul li a{
+    display: inline-block;
+    height: 50px;
+    margin: 0 20px;
+    color: #757475;
+}
+nav ul li a:hover,nav ul li a.active{
+    color: #fff;
+}
+footer{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background-color: #1F1F21;
+    margin-top: 50px;
+
+}
+.footer-box{
+    width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    color: #555;
+    font-size: 10px;
+}
+.beian{
+    float: left;
+}
+.contact{
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+.contact-content{
+    width: 150px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    background-color: #fff;
+    text-align: center;
+    display: none;
+    border-radius: 5px 5px 0 0;
+    z-index: 100;
+}
+.contact-content p{
+    margin: 8px 0;
+    cursor: pointer;
+}
+.contact-content p:hover{
+    background-color: #1F1F21;
+    color: #fff;
+}
