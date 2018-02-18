@@ -5,9 +5,10 @@
 }
 .img-url-box{
     width: 1200px;
+    padding-bottom: 10px;
     overflow: hidden;
 }
-.img-url-itex{
+.img-url-item{
     float: left;
     text-align: center;
     width: 240px;
@@ -18,16 +19,16 @@
     background-color: #1F1F21;
     transition: 1s;
 }
-.img-url-itex:hover{
+.img-url-item:hover{
     background-color: #38383c;
     box-shadow: 5px 5px 5px #0f0f0f;
     border-radius: 5px;
     transition: 0.7s;
 }
-.img-url-itex img{
+.img-url-item img{
     width: 220px;
     height: 220px;
 }
-.img-url-itex h3{
+.img-url-item h3{
     color: #aaa;
 }

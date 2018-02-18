@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>大麦摄影工作室</title>
+        <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/header.css" media="screen" title="no title" charset="utf-8">
+
+
+        <link rel="stylesheet" href="css/page.css" media="screen" title="no title" charset="utf-8">
+
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-bg">
+                <a href="#">
+                    <img class="logo" src="images/logo.png" alt="" />
+                </a>
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="portrait.html">人像写真</a></li>
+                    <li><a href="page-item.html">旅拍</a></li>
+                    <li><a href="page-item.html">纪实婚纱</a></li>
+                    <li><a href="page-item.html">微电影</a></li>
+                    <li><a href="page-item.html">人文风景</a></li>
+                    <li><a href="#">报价</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">婚摄感悟</a></li>
+                </ul>
+            </nav>
+        </header>
+            <div class="page-img-url">
+                <div class="page-header">
+                    <h1>第一篇文章名称</h1>
+                    <p>
+                        第一篇文章内容简介
+                    </p>
+                </div>
+                <ul>
+                    <li style="background-image:url(images/portrait/portrait-4.jpg)"></li>
+                    <li style="background-image:url(images/portrait/portrait-1.jpg)"></li>
+                    <li style="background-image:url(images/portrait/portrait-2.jpg)"></li>
+                    <li style="background-image:url(images/portrait/portrait-3.jpg)"></li>
+                    <li style="background-image:url(images/portrait/portrait-4.jpg)"></li>
+                    <li style="background-image:url(images/portrait/portrait-2.jpg)"></li>
+                    <li style="background-image:url(images/portrait/portrait-1.jpg)"></li>
+                </ul>
+            </div>
+
+
+        <footer>
+            <div class="footer-box">
+                <div class="beian">
+                    Copyright (c) 2018 Copyright Holder All Rights Reserved.
+                </div>
+                <div class="contact">
+                    联系我
+                    <div class="contact-content">
+                        <p>
+                            QQ: 88888888
+                        </p>
+                        <p>
+                            微信: 88888888
+                        </p>
+                        <p>
+                            电话:  88888888
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <div class="img-big-box">
+            <div class="img-big-show" style="background-image:url(images/portrait/portrait-2.jpg)">
+
+            </div>
+            <a href="javascript:" class="arrow-left">
+                <img src="images/arrow-left.png" alt="" />
+            </a>
+            <a href="javascript:" class="arrow-right">
+                <img src="images/arrow-right.png" alt="" />
+            </a>
+
+            <a href="javascript:" class="clear">
+                <img src="images/clear.png" alt="" />
+            </a>
+
+        </div>
+    </body>
+    <script type="text/javascript">
+    $(document).ready(function() {
+            $('.contact').hover(function() {
+                $('.contact-content').toggle()
+            }, function() {
+                $('.contact-content').toggle()
+            });
+
+
+
+    $('.page-img-url ul li').each(function(index) {
+        $(this).click(function(event) {
+            $('.img-big-box').fadeIn(300);
+            $('.img-big-show').attr('style',$(this).attr('style'));
+            var num = $(this).index()
+            $('.arrow-left').click(function(event) {
+
+                num--
+                if (num<0) {
+                    num=$('.page-img-url ul li').length-1;
+                }
+                console.log(num);
+                $('.img-big-show').attr('style',$('.page-img-url ul li').eq(num).attr('style'));
+            });
+            $('.arrow-right').click(function(event) {
+                num++
+                if (num>=$('.page-img-url ul li').length) {
+                    num=0;
+                }
+                console.log(num);
+                $('.img-big-show').attr('style',$('.page-img-url ul li').eq(num).attr('style'));
+            });
+        });
+
+    });
+    $('.clear').click(function(event) {
+        $('.img-big-box').fadeOut(300);
+    });
+
+
+});
+
+    </script>
+</html>
