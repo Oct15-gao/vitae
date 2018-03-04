@@ -73,10 +73,10 @@ a {
   text-decoration: none;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'HiraginoSansGBW3';
   src: url("../font/HiraginoSansGBW3.otf");
-}
+} */
 /* line 11, ../sass/main.scss */
 body {
   font-family: 'HiraginoSansGBW3',"Microsoft YaHei","HanHei SC","Helvetica Neue" ,'weiruanyahei';
