@@ -10,8 +10,10 @@
         <link media="(min-width:780px)" rel="stylesheet" href="style/stylesheets/main.css">
         <!-- 手机端样式 -->
         <link media="(max-width:780px)" rel="stylesheet" href="style/stylesheets/mobie.css">
-        <script src='js/jquery.min.js'></script>
-        <script src='js/vitae.js'></script>
+        <script
+          src="http://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
 
     </head>
     <body>
@@ -35,13 +37,13 @@
                         <div class="colorbox">
                             <div class="arrow"></div>
                         </div>
-                        <a  href="vitae.html">关于</a>
+                        <a class="about"  href="vitae.html">关于</a>
                     </li>
                     <li class="active">
                         <div class="colorbox">
                             <div class="arrow"></div>
                         </div>
-                        <a  href="work.html">作品</a></li>
+                        <a class="portfolio"  href="work.html">作品</a></li>
                     <li>
                         <div class="colorbox">
                             <div class="arrow"></div>
@@ -151,5 +153,26 @@
 
 
     </body>
+    <script type="text/javascript">
+    setTimeout(function(){
+        $("#loading").slideUp(1500)
+    },0)
+    $(document).ready(function() {
+
+        $('.menu li').click(function(event) {
+        $(this).addClass('active').siblings().removeClass('active')
+        });
+
+
+        // 图片移入加长
+        $('.item.length .img').mouseover(function(event) {
+            $(this).stop().animate({'max-height': 800}, 500)
+        });
+        $('.item.length .img').mouseout(function(event) {
+            $(this).stop().animate({'max-height': 150}, 200)
+        });
+
+    });
+    </script>
 
 </html>

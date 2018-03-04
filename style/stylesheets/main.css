@@ -73,13 +73,9 @@ a {
   text-decoration: none;
 }
 
-/* @font-face {
-  font-family: 'HiraginoSansGBW3';
-  src: url("../font/HiraginoSansGBW3.otf");
-} */
 /* line 11, ../sass/main.scss */
 body {
-  font-family: 'HiraginoSansGBW3',"Microsoft YaHei","HanHei SC","Helvetica Neue" ,'weiruanyahei';
+  font-family: "Microsoft YaHei","HanHei SC","Helvetica Neue" ,'weiruanyahei';
   font-size: 14px;
   background-image: url("../../images/pattern.png");
 }
