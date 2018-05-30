@@ -6,8 +6,6 @@ $(document).ready(function() {
     $('.menu li').click(function(event) {
     $(this).addClass('active').siblings().removeClass('active')
     });
-
-
     // 图片移入加长
     $('.item.length .img').mouseover(function(event) {
         $(this).stop().animate({'max-height': 800}, 500)
@@ -15,5 +13,4 @@ $(document).ready(function() {
     $('.item.length .img').mouseout(function(event) {
         $(this).stop().animate({'max-height': 150}, 200)
     });
-
 });
